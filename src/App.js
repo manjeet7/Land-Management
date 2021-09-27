@@ -1,24 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import Manager from "./Component/Manager";
+import Land from "./Component/Land";
+import { LandProvider } from "./Component/Moviecontext";
+import Net from "./Component/Net";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <LandProvider>
+      <div className="App">
+        {/* <Manager /> */}
+        {/* <Land /> */}
+        <Net />
+      </div>
+    </LandProvider>
   );
 }
 

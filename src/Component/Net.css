@@ -1,0 +1,17 @@
+.land_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.land {
+  border: 1px solid black;
+  width: 300px;
+}
+.land_button {
+  margin-left: 20px;
+}
+.land_container {
+  justify-content: center;
+  display: flex;
+}
